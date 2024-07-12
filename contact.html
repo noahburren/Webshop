@@ -26,7 +26,7 @@
       </section>
       <section class="contact-form">
         <h2>Kontaktformular</h2>
-        <form action="php/mailer.php" method="post">
+        <form id="contact-form">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
@@ -45,10 +45,12 @@
 
           <button type="submit">Absenden</button>
         </form>
+        <p id="form-feedback"></p>
       </section>
     </main>
     <footer>
       <p>&copy; 2024 Mein Webshop</p>
     </footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
