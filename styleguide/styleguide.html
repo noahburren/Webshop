@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webshop Styleguide</title>
+    <style>
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        background-color: #ffffff;
+        color: #000000;
+        margin: 0;
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      h1,
+      h2 {
+        margin-bottom: 10px;
+      }
+      section {
+        border: 1px solid #000000;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      .color-swatch {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .color-swatch p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Webshop Styleguide</h1>
+    </header>
+    <main>
+      <section class="colors">
+        <h2>Farben</h2>
+        <div class="color-swatch" style="background-color: #292929">
+          <p>Hintergrundfarbe: Dunkelgrau (#292929)</p>
+        </div>
+        <div class="color-swatch" style="background-color: #262626">
+          <p>Header und Footer Hintergrund: Dunkleres Grau (#262626)</p>
+        </div>
+        <div class="color-swatch" style="background-color: #333333">
+          <p>Produktgitter-Element Hintergrund: Grau (#333333)</p>
+        </div>
+        <div class="color-swatch" style="background-color: #8e44ad">
+          <p>Button-Hintergrund: Lila (#8e44ad)</p>
+        </div>
+        <div
+          class="color-swatch"
+          style="background-color: #f0f0f0; color: #000000"
+        >
+          <p>Textfarbe: Hellgrau (#f0f0f0)</p>
+        </div>
+      </section>
+      <section class="fonts">
+        <h2>Schriftarten</h2>
+        <p>Primäre Schriftart: "Roboto", Arial, sans-serif</p>
+        <p>
+          Logo-Schriftart: "Instagram-Sans", "Segoe UI", Tahoma, Geneva,
+          Verdana, sans-serif, 1.5em
+        </p>
+        <p>Allgemeine Text-Schriftgröße: 16px</p>
+      </section>
+      <section class="navigation">
+        <h2>Navigationselemente</h2>
+        <p>
+          Navigationselemente sind inline-blocks mit 10px horizontalem Abstand
+          und Links, die fett gedruckt und mit einem 0.5em 1em Innenabstand
+          sind. Beim Hover-Effekt wechselt der Hintergrund auf #333333.
+        </p>
+      </section>
+      <section class="product-grid">
+        <h2>Produktgitter</h2>
+        <p>
+          Produktgitter verwendet ein 3-Spalten-Layout, das auf 2 Spalten bei
+          max. 1024px und auf 1 Spalte bei max. 768px reduziert wird. Die
+          Produkte haben eine Hintergrundfarbe von #333333, einen Schatteneffekt
+          und eine leichte Hover-Transformation.
+        </p>
+      </section>
+      <section class="form-elements">
+        <h2>Formulare</h2>
+        <p>
+          Formulare verwenden ein Grid-Layout mit einer Lücke von 1em. Inputs
+          haben einen 0.5em Innenabstand, eine 1px Randfarbe von #333333, einen
+          Hintergrund von #262626, und eine Textfarbe von #f0f0f0. Buttons haben
+          eine Hintergrundfarbe von #8e44ad, die beim Hover auf #732d91
+          wechselt.
+        </p>
+      </section>
+      <section class="responsive-design">
+        <h2>Responsives Design</h2>
+        <p>
+          Bei einer maximalen Breite von 1024px: Produktgitter wechselt zu 2
+          Spalten.
+        </p>
+        <p>
+          Bei einer maximalen Breite von 768px: Header-Innenabstand verringert
+          sich auf 0.8em, Navigationselemente und Produktgitter wechseln zu 1
+          Spalte.
+        </p>
+        <p>
+          Bei einer maximalen Breite von 480px: Navigationselemente werden in
+          einer Spalte mit geringeren Abständen angezeigt.
+        </p>
+      </section>
+      <section class="product-detail">
+        <h2>Produktdetails</h2>
+        <p>
+          Produktdetailansicht verwendet ein Flex-Layout, das bei max. 768px auf
+          eine Spaltenrichtung wechselt. Der Bildcontainer hat eine feste Größe
+          von 300x300px und ein Schatteneffekt.
+        </p>
+      </section>
+      <section class="cart">
+        <h2>Warenkorb</h2>
+        <p>
+          Warenkorbelemente sind Flex-Container mit einem Bild und einem
+          Entfernen-Button, der eine Hintergrundfarbe von #e74c3c hat, die beim
+          Hover auf #c0392b wechselt.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

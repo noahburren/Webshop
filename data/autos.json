@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Nissan GT-R R34",
+        "description": "Legendärer japanischer Sportwagen mit Allradantriebstechnologie.",
+        "price": "59,999 €",
+        "image": "images/auto1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "BMW E30",
+        "description": "Ikonisches deutsches Auto der 80er Jahre, bekannt für sein Design und Fahrbarkeit.",
+        "price": "34,999 €",
+        "image": "images/auto2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Ferrari F40",
+        "description": "Legendärer Supersportwagen von Ferrari, bekannt für seine Geschwindigkeit und Leichtigkeit.",
+        "price": "999,999 €",
+        "image": "images/auto3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Porsche GT3 RS",
+        "description": "Hochleistungssportwagen von Porsche, optimiert für Rennstrecken und Straßen.",
+        "price": "129,999 €",
+        "image": "images/auto4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Mazda MX-5 (Miata)",
+        "description": "Beliebter Roadster mit hervorragendem Handling und erschwinglicher Sportwagenerfahrung.",
+        "price": "24,999 €",
+        "image": "images/auto5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Dodge Challenger Hellcat",
+        "description": "Amerikanisches Muscle-Car mit leistungsstarkem V8-Motor und auffälligem Design.",
+        "price": "69,999 €",
+        "image": "images/auto6.jpg"
+    }
+]
