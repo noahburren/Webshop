@@ -73,39 +73,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Make addToCart function global for inline event handlers
   window.addToCart = addToCart;
-
-  // Newsletter form submission
-  const newsletterForm = document.getElementById("newsletter-form");
-  if (newsletterForm) {
-    const feedback = document.getElementById("newsletter-feedback");
-
-    newsletterForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      const formData = new FormData(newsletterForm);
-      const email = formData.get("email");
-
-      fetch("php/mailer.php", {
-        method: "POST",
-        body: formData,
-      })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error("Fehler beim Senden des Formulars");
-          }
-          return response.text();
-        })
-        .then((data) => {
-          feedback.textContent = "Erfolgreich angemeldet!";
-          feedback.style.color = "green";
-          newsletterForm.reset();
-        })
-        .catch((error) => {
-          console.error("Fehler:", error);
-          feedback.textContent =
-            "Es gab ein Problem bei der Anmeldung. Bitte versuchen Sie es später erneut.";
-          feedback.style.color = "red";
-        });
-    });
-  }
 });
